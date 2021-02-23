@@ -27,3 +27,5 @@
 
 #for oemfs
 allow priv_app oemfs:lnk_file { read getattr };
+allow priv_app sysfs_leds:dir search;
+allow priv_app sysfs_leds:file { write getattr open read  };

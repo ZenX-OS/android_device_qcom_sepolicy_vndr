@@ -178,3 +178,6 @@ get_prop(system_app, vendor_radio_prop)
 
 #allow system app to access capabilityconfigstore hal
 hal_client_domain(system_app, hal_capabilityconfigstore_qti);
+
+allow system_app sysfs_leds:dir search;
+allow system_app sysfs_leds:file { write getattr open read  };
